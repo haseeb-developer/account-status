@@ -13,21 +13,9 @@
   /* font-family: "Lato", sans-serif; */
   /* font-family: "Comfortaa", sans-serif; */
 }
-
 body {
-  font-family: "Arial", sans-serif;
-  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  background: linear-gradient(to bottom right, #ff7e5f, #feb47b);
   margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  /* text-align: center; */
-}
-
-.card-img-top {
-  max-width: 100px;
 }
 
 .container {
@@ -41,6 +29,8 @@ body {
   font-size: 2em;
   color: #ff7e5f;
   margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .card {
@@ -48,6 +38,8 @@ body {
   overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
   background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  min-height: 250px; /* Ensure all cards have the same height */
+  margin-bottom: 20px;
 }
 
 .card:hover {
@@ -59,6 +51,15 @@ body {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   transition: transform 0.3s;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin: 20px auto 10px;
+  display: block;
+  border: 3px solid #ff7e5f;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: white;
 }
 
 .card:hover .card-img-top {
@@ -66,9 +67,7 @@ body {
 }
 
 .card-body {
-  position: relative;
   padding: 20px;
-  /* text-align: center; */
 }
 
 .card-title {
@@ -84,37 +83,28 @@ body {
   color: #333;
 }
 
+.admin-profile .card-body {
+  background: linear-gradient(to top, #f7bb97 0%, #dd5e89 100%);
+  border-radius: 10px;
+  color: white;
+}
+
 .gf-account .card-text {
   color: #ff1493;
   font-size: 1.2em;
 }
 
-.details-btn {
-  background: #ff7e5f;
-  border: none;
-  border-radius: 50px;
+.footer {
+  text-align: center;
+  margin-top: 20px;
   color: #fff;
-  cursor: pointer;
-  padding: 10px 20px;
   font-size: 1em;
-  transition: background 0.3s, transform 0.3s;
-}
-
-.details-btn:hover {
-  background: #feb47b;
-  transform: scale(1.1);
-}
-
-.details {
-  display: none;
-  margin-top: 10px;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(0, 0, 0, 0.5);
   padding: 10px;
   border-radius: 10px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
-.details p {
+.footer p {
   margin: 0;
-  color: #555;
+  font-weight: bold;
 }
