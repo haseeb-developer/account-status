@@ -8,6 +8,10 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -147,6 +151,26 @@
         </div>
       </div>
 
+      <h2 class="header">Rate Us</h2>
+      <div class="row mb-5">
+        <div class="col-md-6">
+          <div class="card rating-card">
+            <div class="card-body">
+              <h5 class="card-title">Rate Our Website</h5>
+              <p class="card-text">Help us improve by rating our website.</p>
+              <button class="btn btn-primary thumbs-up-btn" id="thumbs-up">
+                <i class="fas fa-thumbs-up"></i>
+                <span id="thumbs-up-count">0</span>
+              </button>
+              <button class="btn btn-danger thumbs-down-btn" id="thumbs-down">
+                <i class="fas fa-thumbs-down"></i>
+                <span id="thumbs-down-count">0</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- More Features -->
       <h1 class="header">More comming soon....</h1>
     </div>
@@ -164,5 +188,6 @@
         };
     </script>
     <script defer src="/_vercel/insights/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   </body>
 </html>
